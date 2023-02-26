@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Length Convertor </title>
+
+
+
+  <link rel="stylesheet" href="p2.css">
+</head>
+
+<body>
+  <h1> Length Calculator </h1>
+  <div class="formstyle">
+    <form name="form1">
+      <input id="calc" type="text" name="answer" Placeholder="Enter length in Meter"> <br> <br>
+      <input type="button" value="Cm" onclick="form1.answer.value  = (form1.answer.value)*100">
+      <input type="button" value="Inch" onclick="form1.answer.value =(form1.answer.value)*4">
+      <input type="button" value="Feet" onclick="form1.answer.value = (form1.answer.value)/3">
+      <input type="button" value="Mile" onclick="form1.answer.value =(form1.answer.value)/1609">
+      <br>
+      <input type="button" value="Clear All" onclick="form1.answer.value = ' ' " id="clear">
+      <br>
+
+    </form>
+  </div>
+</body>
+
+</html>

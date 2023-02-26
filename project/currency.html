@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Mass Convertor </title>
+  <style>
+    .formstyle {
+      height: 250px;
+    }
+
+    input {
+      width: 20px;
+      background-color: rgb(43, 50, 117);
+      color: white;
+      border: 3px solid rgb(85, 228, 204);
+      border-radius: 5px;
+      width: 130px;
+      padding: 3px;
+      margin: 5px;
+      font-size: 15px;
+      height: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="p2.css">
+
+</head>
+
+<body>
+  <h1> Currency Calculator </h1>
+  <div class="formstyle">
+    <form name="form1">
+      <input id="calc" type="text" name="answer" Placeholder="Enter Money in Rupee"> <br> <br>
+      <input type="button" value="Dollar" onclick="form1.answer.value  = (form1.answer.value)/82.93">
+      <input type="button" value="Pound" onclick="form1.answer.value =(form1.answer.value)*99.07">
+      <input type="button" value="Dirham" onclick="form1.answer.value = (form1.answer.value)/22.58">
+      <input type="button" value="Ruble" onclick="form1.answer.value =(form1.answer.value)*1.09">
+      <br>
+      <input type="button" value="Clear All" onclick="form1.answer.value = ' ' " id="clear">
+      <br>
+
+    </form>
+  </div>
+</body>
+
+</html>
